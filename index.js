@@ -7,7 +7,7 @@ function initApplication() {
 }
 
 function loadIndex() {
-    var contactRequest = new XMLHttpRequest();
+    var contactRequest = new XMLHttpRequest()
     indexRequest.open('GET', 'https://mustang-index-jaw.azurewebsites.net');
     indexRequest.onload = function() {
         console.log("Index JSON: " + indexRequest.responseText);
